@@ -1,0 +1,290 @@
+
+	body{
+		margin:0px;
+		font-family:arial;
+	}
+
+/*Top banner*/	
+
+	#top{
+		display:block;
+		width:1200px;
+		height:95px;
+		background-color:rgb(240, 248, 255);
+		margin:auto;
+		
+	}
+	#logo{
+		height:75px;
+		display: inline-block;
+		padding:10px;
+		padding-left:50px;
+		margin:0px;
+	}
+
+	h1{
+		display:inline-block;
+		color:rgb(33, 177, 221);
+		font-size:22px;	
+		vertical-align:top;
+		padding-top:25px;
+		margin:0px;		
+	}
+
+
+
+/*Info on top right corner*/
+
+	#info{
+		display:block;
+		float:right;
+		width:150px;	
+		padding-top:25px;
+		padding-right:25px;		
+	}
+	
+	#info p{
+
+		display:inline-block;
+		color:rgb(33, 177, 221);
+		font-size:16px;		
+		margin:0px;
+		padding-top:10px;
+	}
+
+	#sat, #telefon{
+		display:inline-block;
+		width:18px;
+		vertical-align:text-bottom;
+	}
+	
+	#klik{
+		width:150px;
+		background-color:aliceblue;
+		display:none;
+		position:absolute;
+		z-index:1;
+		text-align:center;
+		padding:10px;
+		margin-left:-12px;
+		box-shadow: 2px 2px 5px 0px  rgba(112, 187, 232, 0.93);
+	}
+	a{
+		display:inline-block;		
+		cursor:pointer;				
+	}
+
+
+/*Menu on pages other than index*/
+
+	#menu{
+		display:inline-block;
+		position:absolute;
+		padding-left:170;		
+		vertical-align:top;
+	}
+
+	#menu ul{
+		padding-top:50px;
+		list-style:none;
+		display:inline-block;
+		margin:0px;		
+	}
+
+	#menu li{		
+		display:inline-block;
+		
+	}
+
+	#menu li a{		
+		display:block;
+		padding:12px;
+		background-color:rgb(240, 248, 255);
+		color:#21b1e4;
+		text-decoration:none;		
+	}
+
+	#menu a:hover{	
+		text-decoration:none;
+		color:aliceblue;
+		background-color:#21b1e4;				
+	}
+	
+
+
+/*Main content on index*/
+
+	#main{
+		display:block;
+		width:1200px;
+		height:1000px;		
+		background-color:#f7f7f7;
+		margin:auto;
+		border-width:1;
+		border-top:solid;
+		border-color:#21b1e4;
+	}
+
+	#imgGirl{
+		display:block;
+		width:1200px;	
+		margin:auto;
+	}
+
+	#imgOrd{
+		display:block;
+		width:80px;
+		margin:auto;
+		padding-top:40px;
+		padding-bottom:13px;
+	}
+
+	#imgLab{
+		display:block;
+		width:80px;
+		margin:0px;		
+		padding-top:70px;
+		padding-bottom:43px;
+		margin:auto;
+	}
+
+	#imgKon{
+		display:block;
+		width:70px;
+		margin:auto;
+		padding-top:40px;
+		padding-bottom:30px;
+	}
+
+	
+
+
+/*Index menu*/
+
+
+	#kocke{		
+		padding-left:180px;
+		margin-top:-60px;
+		list-style:none;
+	
+	}	
+	
+	#kocke li{		
+		display:inline-block;
+		width:170px;
+		height:200px;
+		vertical-align:top;
+		text-align:center;		
+	}
+	 	
+	#kocke a{		
+		display:inline-block;
+		text-decoration:none;
+		width:100%;
+		height:100%				
+	}
+	
+	#kocke li:hover a{
+		margin-top:-20px;
+	}
+
+	#drugaKocka{
+		background-color:rgba(112, 187, 232, 0.93);
+	}
+
+	#prvaKocka, #trecaKocka{
+		background-color:rgba(40, 86, 144, 0.93);
+	}
+	
+	#kocke spam{
+		color:white;
+		font-family:arial;
+		font-size:18px;
+	}
+	
+/*kontakt*/
+
+	iframe{
+		display:inline-block;
+		width:62%;
+		height:40%;
+		margin-left:20px;
+		margin-top:40px;
+						
+	}
+
+	#kont{
+		padding-top:100px;
+		float:right;
+		width:250px;
+		display:inline-block;		
+		padding-right:60;
+			
+	}
+	
+	#kont p{
+
+		display:inline-block;
+		text-align:left;
+		color:#21b1e4;
+		margin:0px;	
+	}
+
+	#kont p:nth-child(even)::first-line{
+		
+		
+	}
+	
+	#kont p:nth-child(odd) {
+		text-shadow:1px 1px rgba(40, 86, 144, 0.93);
+
+		padding-top:40px;
+		padding-bottom:10px;
+	}
+	
+
+	#tel{
+		display:block;
+		float:right;
+		width:150px;
+		padding-top:25px;
+		padding-right:25px;
+	}
+	
+	#tel #telefon{
+		vertical-align:text-bottom;		
+	}
+
+	#tel p{	
+		display:inline-block;
+		margin:0px;
+		color:#21b1e4;
+
+	}
+
+
+	
+	
+
+
+
+
+
+/*Responsive*/
+
+
+	@media only screen and (min-width: 150px) and (max-width: 500px) {
+
+		#top{
+			display:block;
+			width:100%;
+		}
+
+		#kocke{
+			display:block;
+			width:100%;
+		}
+		#ordinacija, #laboratorij, #kontakt{
+			width:100%;
+		}
+	}
